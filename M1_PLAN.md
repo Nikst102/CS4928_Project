@@ -21,11 +21,7 @@ section 11 with the reason and date.
 
 ## 2. Research questions
 
-**RQ1 (bounded reproduction).** To what extent can the four release-wise refactoring
-patterns reported by Noei et al., and their distribution (Early Active 30%, Steady
-Inactive 30%, Late Active 23%, Steady Active 17%), be reproduced by re-running the
-authors' released clustering method on their released data for all 1,604 releases?
-
+**RQ1 (bounded reproduction).** To what extent can the release-wise refactoring patterns reported by Noei et al. be reproduced on a bounded subset of releases using the authors' released data and analysis method?
 **RQ2 (extension and design).** Are the four patterns stable when the clustering is
 re-run under conditions the paper does not report (random seeds 0-9; k = 3, 4, 5),
 and what is the smallest justified design change to the replication package so that
