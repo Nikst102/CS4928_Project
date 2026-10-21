@@ -1,0 +1,55 @@
+started (UTC): 2026-10-21T14:53:25+00:00
+python: 3.10.20 | platform: Linux-6.18.44-fc-v139-x86_64-with-glibc2.39
+numpy 1.26.4 | scipy 1.12.0 | tslearn 0.6.3 | scikit-learn 1.4.0 | pandas 2.3.3 | matplotlib 3.8.2 | seaborn 0.13.2
+releases clustered: 1604
+--- authors' cluster_and_analyze() output follows; the first number is the silhouette score ---
+0.3019010480189238
+performing:  9
+DataFrame for size:
+       Late Active  Steady Inactive  Early Active  Steady Active
+least    25.336927        23.966942     21.218487      32.967033
+less     21.563342        30.165289     25.210084      20.146520
+more     26.954178        21.900826     28.151261      22.344322
+most     26.145553        23.966942     25.420168      24.542125
+Chi-Square Statistic for size: 24.921179315085077
+P-Value for size: 0.00305961945212489
+DataFrame for developers:
+       Late Active  Steady Inactive  Early Active  Steady Active
+least    30.727763        19.628099     28.571429      41.758242
+less     21.832884        31.198347     22.689076      20.879121
+more     23.450135        25.826446     21.638655      18.681319
+most     23.989218        23.347107     27.100840      18.681319
+Chi-Square Statistic for developers: 52.14612301282459
+P-Value for developers: 4.2416177587860176e-08
+DataFrame for stars:
+       Late Active  Steady Inactive  Early Active  Steady Active
+least    26.145553        24.793388     24.159664      28.571429
+less     25.336927        21.074380     22.689076      32.234432
+more     23.180593        24.586777     27.521008      23.809524
+most     25.336927        29.545455     25.630252      15.384615
+Chi-Square Statistic for stars: 27.32168909079912
+P-Value for stars: 0.0012372183696337255
+      cluster_id refactoring_type  early_median  middle_median  late_median  \
+0   Early Active         Variable         20.06          14.93         9.41   
+1   Early Active           Method         61.13          53.17        37.91   
+2   Early Active            Class         20.60          16.32        11.82   
+3   Early Active              All        126.13         103.83        83.69   
+4    Late Active         Variable         11.93          18.35        18.58   
+5    Late Active           Method         38.41          55.31        60.06   
+6    Late Active              All         86.78         109.50       119.98   
+7  Steady Active         Variable         22.53          20.07        15.49   
+8  Steady Active              All        122.35          93.19        96.54   
+
+   p_value  
+0  0.00000  
+1  0.00002  
+2  0.00501  
+3  0.00000  
+4  0.00112  
+5  0.00067  
+6  0.00198  
+7  0.01954  
+8  0.03242  
+--- end of authors' output ---
+elapsed seconds: 677.9
+exit=0

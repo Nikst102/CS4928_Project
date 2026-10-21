@@ -1,7 +1,7 @@
-# The unzipped 190 MB time-series file is over GitHub's 100 MB limit.
-# data.zip is tracked instead; run `unzip data.zip` to recreate it.
-# Result files written to data/softdtw/ are NOT ignored, so they can be committed as evidence.
-data/timeseries_final_Major_Minor.json
+# Unzipped dataset: recreate it with `unzip data.zip`.
+# The 190 MB time-series file is over GitHub's 100 MB limit, and the run writes a
+# 108 MB file to data/softdtw/. Result files we keep as evidence are copied to results/.
+data/
 
 # Python
 __pycache__/

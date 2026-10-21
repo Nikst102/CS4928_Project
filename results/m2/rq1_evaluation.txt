@@ -1,0 +1,30 @@
+Releases: 1604
+
+a. Distribution (authors' mapping)          ours    paper   gap
+   Early Active         476 releases   29.7%    30%   0.3 pp
+   Steady Inactive      484 releases   30.2%    30%   0.2 pp
+   Late Active          371 releases   23.1%    23%   0.1 pp
+   Steady Active        273 releases   17.0%    17%   0.0 pp
+   pass (all gaps <= 3 pp): True
+
+b. ARI vs authors' shipped labels: 1.0000   pass (>= 0.8): True
+
+c. Silhouette: 0.3019 (paper 0.3)   pass (within 0.05): True
+
+d. Centroid shape (first-3 mean / last-3 mean / overall mean)
+   Early Active       cluster 0: 0.3090 / 0.1685 / 0.2434
+   Steady Inactive    cluster 3: 0.1021 / 0.1285 / 0.1170
+   Late Active        cluster 2: 0.1614 / 0.3739 / 0.2660
+   Steady Active      cluster 1: 0.4336 / 0.3874 / 0.4122
+   Early Active: first3 > last3: True
+   Late Active: last3 > first3: True
+   Steady Active mean > Steady Inactive mean: True
+   pass: True
+
+OUTCOME: Reproduced
+
+Supplementary: exact label match with authors = 1.0000
+   authors Early Active     -> ours Early Active     476
+   authors Late Active      -> ours Late Active      371
+   authors Steady Active    -> ours Steady Active    273
+   authors Steady Inactive  -> ours Steady Inactive  484

@@ -21,7 +21,11 @@ section 11 with the reason and date.
 
 ## 2. Research questions
 
-**RQ1 (bounded reproduction).** To what extent can the release-wise refactoring patterns reported by Noei et al. be reproduced on a bounded subset of releases using the authors' released data and analysis method?
+**RQ1 (bounded reproduction).** To what extent can the four release-wise refactoring
+patterns reported by Noei et al., and their distribution (Early Active 30%, Steady
+Inactive 30%, Late Active 23%, Steady Active 17%), be reproduced by re-running the
+authors' released clustering method on their released data for all 1,604 releases?
+
 **RQ2 (extension and design).** Are the four patterns stable when the clustering is
 re-run under conditions the paper does not report (random seeds 0-9; k = 3, 4, 5),
 and what is the smallest justified design change to the replication package so that
@@ -186,4 +190,11 @@ claim made from M2 onwards will point to a script, output file or commit.
 
 ## 11. Change log
 
-No changes since the freeze.
+- **7 October 2026, commit a9d55f4 (after the `M1_PLAN` tag).** RQ1 was reworded on
+  `main` to: "To what extent can the release-wise refactoring patterns reported by
+  Noei et al. be reproduced on a bounded subset of releases using the authors' released
+  data and analysis method?" That wording conflicted with sections 4-7, which use all
+  1,604 releases and no sub-sampling, and it was made without a change-log entry.
+- **21 October 2026 (M2).** RQ1 restored to the wording frozen at the `M1_PLAN` tag,
+  before the reproduction results were evaluated. The M2 reproduction follows the
+  tagged plan. The edited wording is kept above so the history stays traceable.

@@ -1,0 +1,131 @@
+{
+  "n_releases": 1604,
+  "a_distribution": {
+    "our_counts": {
+      "Early Active": 476,
+      "Steady Inactive": 484,
+      "Late Active": 371,
+      "Steady Active": 273
+    },
+    "our_shares_pct": {
+      "Early Active": 29.7,
+      "Steady Inactive": 30.2,
+      "Late Active": 23.1,
+      "Steady Active": 17.0
+    },
+    "paper_shares_pct": {
+      "Early Active": 30,
+      "Steady Inactive": 30,
+      "Late Active": 23,
+      "Steady Active": 17
+    },
+    "gap_pp": {
+      "Early Active": 0.3,
+      "Steady Inactive": 0.2,
+      "Late Active": 0.1,
+      "Steady Active": 0.0
+    },
+    "pass": true
+  },
+  "b_agreement": {
+    "adjusted_rand_index": 1.0,
+    "pass": true
+  },
+  "c_separation": {
+    "silhouette": 0.3019,
+    "paper": 0.3,
+    "pass": true
+  },
+  "d_shape": {
+    "centroids": {
+      "Early Active": {
+        "cluster_id": 0,
+        "first3_mean": 0.309,
+        "last3_mean": 0.1685,
+        "overall_mean": 0.2434,
+        "centroid": [
+          0.322,
+          0.3082,
+          0.2968,
+          0.2816,
+          0.2624,
+          0.2403,
+          0.2169,
+          0.1931,
+          0.1692,
+          0.1432
+        ]
+      },
+      "Steady Active": {
+        "cluster_id": 1,
+        "first3_mean": 0.4336,
+        "last3_mean": 0.3874,
+        "overall_mean": 0.4122,
+        "centroid": [
+          0.443,
+          0.4313,
+          0.4265,
+          0.4231,
+          0.4189,
+          0.4129,
+          0.4044,
+          0.3939,
+          0.3845,
+          0.3838
+        ]
+      },
+      "Late Active": {
+        "cluster_id": 2,
+        "first3_mean": 0.1614,
+        "last3_mean": 0.3739,
+        "overall_mean": 0.266,
+        "centroid": [
+          0.1275,
+          0.1641,
+          0.1925,
+          0.2199,
+          0.2485,
+          0.278,
+          0.308,
+          0.3389,
+          0.3723,
+          0.4104
+        ]
+      },
+      "Steady Inactive": {
+        "cluster_id": 3,
+        "first3_mean": 0.1021,
+        "last3_mean": 0.1285,
+        "overall_mean": 0.117,
+        "centroid": [
+          0.095,
+          0.1029,
+          0.1083,
+          0.1127,
+          0.1171,
+          0.1218,
+          0.1265,
+          0.1302,
+          0.1308,
+          0.1245
+        ]
+      }
+    },
+    "checks": {
+      "Early Active: first3 > last3": true,
+      "Late Active: last3 > first3": true,
+      "Steady Active mean > Steady Inactive mean": true
+    },
+    "pass": true
+  },
+  "outcome": "Reproduced",
+  "supplementary": {
+    "exact_label_match_with_authors": 1.0,
+    "confusion_authors_vs_ours": {
+      "Early Active -> Early Active": 476,
+      "Late Active -> Late Active": 371,
+      "Steady Active -> Steady Active": 273,
+      "Steady Inactive -> Steady Inactive": 484
+    }
+  }
+}
