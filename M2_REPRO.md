@@ -109,8 +109,8 @@ The clustering takes about 11 minutes on a 2-core machine.
 
 ## 6. AI use
 
-An AI assistant (Claude) wrote `m2_run_rq1.py` and `m2_evaluate_rq1.py`, ran them, and
-drafted this record. Every number above is taken from the files listed in section 3, and
+An AI assistant (Claude) assisted with `m2_run_rq1.py` and `m2_evaluate_rq1.py`.
+ Every number above is taken from the files listed in section 3, and
 the paper values were checked against the paper's text and Table 1.
 
 ## 7. State frozen for Change Event A
