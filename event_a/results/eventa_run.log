@@ -1,0 +1,39 @@
+/home/claude/eventa/venv310/lib/python3.10/site-packages/tslearn/bases/bases.py:15: UserWarning: h5py not installed, hdf5 features will not be supported.
+Install h5py to use hdf5 features: http://docs.h5py.org/
+  warn(h5py_msg)
+started (UTC): 2026-10-30T16:29:32+00:00
+releases loaded: 1604
+alignment with M2 labels: OK
+held-out releases: 46 | training releases: 1558 | training projects: 149
+fit seconds: 399.5
+re-fit cluster -> M2 cluster: {0: 3, 1: 1, 2: 2, 3: 0} | distances: [0.0119, 0.0143, 0.0208, 0.0064]
+(plain nearest, for info): {0: 3, 1: 1, 2: 2, 3: 0}
+training: ARI vs M2 labels = 0.9529 | exact agreement = 0.9814
+/home/claude/eventa/venv310/lib/python3.10/site-packages/tslearn/utils/utils.py:90: UserWarning: 2-Dimensional data passed. Assuming these are 46 1-dimensional timeseries
+  warnings.warn(
+HELD-OUT agreement with M2 pattern: 44 / 46 = 0.9565
+
+pattern            M2 overall | 46 via M2 label | 46 via re-fit | gap vs M2 overall (pp)
+Early Active        29.7%     28.3% (13)     28.3% (13)   -1.4
+Steady Active       17.0%      8.7% ( 4)      8.7% ( 4)   -8.3
+Late Active         23.1%     26.1% (12)     30.4% (14)   +7.3
+Steady Inactive     30.2%     37.0% (17)     32.6% (15)   +2.4
+
+re-fitted centroid shapes (first3 / last3 / mean):
+  Early Active     0.3117 / 0.1700 / 0.2453
+  Steady Active    0.4282 / 0.3925 / 0.4125
+  Late Active      0.1556 / 0.3654 / 0.2597
+  Steady Inactive  0.1024 / 0.1227 / 0.1142
+  Early Active: first3 > last3 -> True
+  Late Active: last3 > first3 -> True
+  Steady Active mean > Steady Inactive mean -> True
+
+confusion (rows = M2 pattern, cols = re-fit pattern) for the 46 held-out releases:
+ [[13  0  0  0]
+ [ 0  4  0  0]
+ [ 0  0 12  0]
+ [ 0  0  2 15]]
+
+max share gap = 8.3 pp | agreement = 95.7% | shapes hold = True
+VERDICT (pre-registered rule): SUPPORTS M2 TRANSFER
+finished (UTC): 2026-10-30T16:36:14+00:00

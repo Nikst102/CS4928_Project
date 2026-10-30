@@ -1,0 +1,393 @@
+{
+  "verdict": "SUPPORTS M2 TRANSFER",
+  "agreement": 0.9565217391304348,
+  "n_heldout": 46,
+  "n_train": 1558,
+  "train_projects": 149,
+  "refit_to_m2_cluster": {
+    "0": 3,
+    "1": 1,
+    "2": 2,
+    "3": 0
+  },
+  "train_ari_vs_m2": 0.9528972996116982,
+  "train_exact_agreement": 0.9813863928112966,
+  "shares_refit_pct": {
+    "Early Active": 28.26086956521739,
+    "Steady Active": 8.695652173913043,
+    "Late Active": 30.434782608695656,
+    "Steady Inactive": 32.608695652173914
+  },
+  "shares_m2_overall_pct": {
+    "Early Active": 29.67581047381546,
+    "Steady Active": 17.01995012468828,
+    "Late Active": 23.129675810473817,
+    "Steady Inactive": 30.174563591022448
+  },
+  "shares_m2_same46_pct": {
+    "Early Active": 28.26086956521739,
+    "Steady Active": 8.695652173913043,
+    "Late Active": 26.08695652173913,
+    "Steady Inactive": 36.95652173913043
+  },
+  "max_share_gap_pp": 8.324297950775236,
+  "shapes": {
+    "Early Active: first3 > last3": true,
+    "Late Active: last3 > first3": true,
+    "Steady Active mean > Steady Inactive mean": true
+  },
+  "centroids_refit_named": {
+    "Early Active": [
+      0.3248179262838265,
+      0.3108732701547393,
+      0.2992944648495282,
+      0.2838068235774721,
+      0.2641218139162802,
+      0.2417520582985156,
+      0.21815662708591332,
+      0.1942833237785769,
+      0.17045918998720286,
+      0.14532006411529966
+    ],
+    "Steady Active": [
+      0.4336014667715221,
+      0.4267457277121005,
+      0.42431626968796,
+      0.42233017129987904,
+      0.4193114864731438,
+      0.41442962377663917,
+      0.4072166109357914,
+      0.39823777459764415,
+      0.3901739854116058,
+      0.3891166316284099
+    ],
+    "Late Active": [
+      0.12142261070627691,
+      0.15841509946755047,
+      0.18682746563026686,
+      0.21432747328585833,
+      0.2432267299892138,
+      0.2732102867378872,
+      0.30327460274302337,
+      0.3330384114004558,
+      0.36390284950677704,
+      0.3993622283785901
+    ],
+    "Steady Inactive": [
+      0.09642763209172228,
+      0.1031964836592486,
+      0.1076634894686686,
+      0.11144785788136928,
+      0.11506423190676833,
+      0.11855867064205033,
+      0.12178095733448444,
+      0.1242313946279096,
+      0.1245375599921352,
+      0.11941212458542626
+    ]
+  },
+  "confusion_rows_m2_cols_refit": [
+    [
+      13,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      15
+    ]
+  ],
+  "heldout": [
+    {
+      "repo": "Linxfeng/flow-eda",
+      "release": "1653359838-1656818508",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "Linxfeng/flow-eda",
+      "release": "1656818508-1658820225",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "Linxfeng/flow-eda",
+      "release": "1658820225-1661439617",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "Linxfeng/flow-eda",
+      "release": "1661439617-1665482536",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1655541652-1659225516",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1659225516-1662148031",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1662148031-1665435647",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1665435647-1667430504",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1667430504-1670272682",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1670272682-1671521918",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1671521918-1672783172",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1672783172-1674021350",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1674021350-1678748170",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1678748170-1681382873",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1681382873-1684808798",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1684808798-1688091868",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1688091868-1690492565",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1690492565-1693496608",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "HummerRisk/HummerRisk",
+      "release": "1693496608-1698300896",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "woowacourse-teams/2022-dallog",
+      "release": "1660823140-1663133094",
+      "m2_pattern": "Steady Active",
+      "refit_pattern": "Steady Active"
+    },
+    {
+      "repo": "CloudExplorer-Dev/CloudExplorer-Lite",
+      "release": "1681458834-1684808491",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "CloudExplorer-Dev/CloudExplorer-Lite",
+      "release": "1684808491-1687835340",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "CloudExplorer-Dev/CloudExplorer-Lite",
+      "release": "1687835340-1690251030",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "CloudExplorer-Dev/CloudExplorer-Lite",
+      "release": "1690251030-1692608659",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1666491514-1668267303",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1668267303-1669971757",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1669971757-1676177295",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1676601111-1677234488",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1677234488-1677769005",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1677769005-1679643110",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1679643110-1680253781",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1680253781-1680860525",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1680860525-1681485295",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1681485295-1685090150",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1685090150-1693192008",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "SaptarshiSarkar12/Drifty",
+      "release": "1663850743-1664716993",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "SaptarshiSarkar12/Drifty",
+      "release": "1664716993-1665924856",
+      "m2_pattern": "Steady Active",
+      "refit_pattern": "Steady Active"
+    },
+    {
+      "repo": "SaptarshiSarkar12/Drifty",
+      "release": "1665924856-1668363424",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Steady Inactive"
+    },
+    {
+      "repo": "SaptarshiSarkar12/Drifty",
+      "release": "1668363424-1695240468",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "mybatis-flex/mybatis-flex",
+      "release": "1681206588-1682503916",
+      "m2_pattern": "Steady Active",
+      "refit_pattern": "Steady Active"
+    },
+    {
+      "repo": "mybatis-flex/mybatis-flex",
+      "release": "1682503916-1685010515",
+      "m2_pattern": "Steady Active",
+      "refit_pattern": "Steady Active"
+    },
+    {
+      "repo": "mybatis-flex/mybatis-flex",
+      "release": "1685010515-1687143049",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "mybatis-flex/mybatis-flex",
+      "release": "1687143049-1689586872",
+      "m2_pattern": "Early Active",
+      "refit_pattern": "Early Active"
+    },
+    {
+      "repo": "mybatis-flex/mybatis-flex",
+      "release": "1689586872-1696845630",
+      "m2_pattern": "Late Active",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "chat2db/Chat2DB",
+      "release": "1688388955-1694269667",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Late Active"
+    },
+    {
+      "repo": "chat2db/Chat2DB",
+      "release": "1694269667-1697555971",
+      "m2_pattern": "Steady Inactive",
+      "refit_pattern": "Late Active"
+    }
+  ]
+}
