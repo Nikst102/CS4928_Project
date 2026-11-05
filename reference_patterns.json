@@ -1,0 +1,54 @@
+{
+  "description": "Reference pattern centroids used to name clusters. Taken from the M2 run (authors' code, seed 9, all 1,604 releases): results/m2/outputs/cluster_center.json, with the authors' names, which M2 check d verified against the shape rule.",
+  "source": "results/m2/outputs/cluster_center.json (tag M2_REPRO)",
+  "patterns": {
+    "Early Active": [
+      0.321994,
+      0.308197,
+      0.296767,
+      0.281631,
+      0.262364,
+      0.240319,
+      0.216908,
+      0.193112,
+      0.169194,
+      0.143163
+    ],
+    "Steady Active": [
+      0.443046,
+      0.431315,
+      0.426506,
+      0.423059,
+      0.41889,
+      0.412883,
+      0.404372,
+      0.393876,
+      0.384515,
+      0.38375
+    ],
+    "Late Active": [
+      0.127528,
+      0.164099,
+      0.192456,
+      0.219917,
+      0.248479,
+      0.277952,
+      0.307955,
+      0.338873,
+      0.372285,
+      0.410448
+    ],
+    "Steady Inactive": [
+      0.095037,
+      0.102926,
+      0.108296,
+      0.112733,
+      0.117129,
+      0.121813,
+      0.126513,
+      0.130196,
+      0.130779,
+      0.124512
+    ]
+  }
+}

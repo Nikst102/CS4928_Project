@@ -3,6 +3,7 @@ from tslearn.clustering import TimeSeriesKMeans
 from clusteringInterface import ClusteringInterface
 import seaborn as sns
 import dataHelper
+import cluster_naming
 import json
 global smell_sign
 from scipy import stats
@@ -53,6 +54,9 @@ class DtwWrapper(ClusteringInterface):
         # Perform clustering
         km_dba = TimeSeriesKMeans(n_clusters=self.k, metric=self.metric, n_jobs=-1, random_state=self.random_state).fit(
             self.timeseries)
+
+        # M4: name clusters by nearest reference centroid, not by cluster number
+        cluster_naming.save_cluster_names(cluster_naming.name_clusters(km_dba.cluster_centers_))
 
         # Calculate silhouette score
         silhouette_score_value = silhouette_score(self.timeseries, km_dba.labels_.tolist(), self.metric, n_jobs=-1,
@@ -117,6 +121,7 @@ class DtwWrapper(ClusteringInterface):
         """
 
         print('performing: ', self.random_state)
+        cluster_names = cluster_naming.load_cluster_names()  # M4; None -> authors' mapping
         with open('data/softdtw/label_timeseries.json') as label_timeseries_file:
             time_series = json.load(label_timeseries_file)
         with open('data/softdtw/cluster_labels.json') as label_timeseries_file:
@@ -174,7 +179,7 @@ class DtwWrapper(ClusteringInterface):
             ax.set_xticks(range(len(averages)))
             ax.set_xticklabels(x_ticks, fontsize=12)
 
-            ax.set_title(dataHelper.rename_cluster(key), fontsize=16, fontweight="bold")
+            ax.set_title(dataHelper.rename_cluster(key, cluster_names), fontsize=16, fontweight="bold")
             # ax.set_title(key, fontsize=16, fontweight="bold")
             ax.set_xlabel('Time Percentiles', fontsize=16, fontweight="bold")
             if idx == 0:
@@ -207,7 +212,8 @@ class DtwWrapper(ClusteringInterface):
             import dataHelper  # You may need to adjust this import
 
             for i in range(0, len(labels)):
-                cluster_label = dataHelper.rename_cluster(labels[i])
+                # These are the authors' shipped labels, so the authors' mapping is the right one.
+                cluster_label = dataHelper.rename_cluster(labels[i], dataHelper.AUTHORS_CLUSTER_NAMES)
                 if cluster_label not in label_distributions[feature]:
                     label_distributions[feature][cluster_label] = []
                 label_distributions[feature][cluster_label].append(categories[feature][i])
@@ -284,6 +290,7 @@ class DtwWrapper(ClusteringInterface):
             5. Stores the results as a CSV file ('data/softdtw/operations-patterns.csv').
         """
 
+        cluster_names = cluster_naming.load_cluster_names()  # M4; None -> authors' mapping
         with open('data/softdtw/label_operations.json') as label_timeseries_file:
             operations = json.load(label_timeseries_file)
 
@@ -337,9 +344,9 @@ class DtwWrapper(ClusteringInterface):
         summary = {}
         for cluster_id, details in overall.items():
             # cluster_id = dataHelper.rename_cluster(cluster_id)
-            summary[dataHelper.rename_cluster(cluster_id)] = {}
+            summary[dataHelper.rename_cluster(cluster_id, cluster_names)] = {}
             for refactoring, numbers in details.items():
-                summary[dataHelper.rename_cluster(cluster_id)][refactoring] = statistics.median(numbers)
+                summary[dataHelper.rename_cluster(cluster_id, cluster_names)][refactoring] = statistics.median(numbers)
 
         data = summary
 
@@ -375,7 +382,7 @@ class DtwWrapper(ClusteringInterface):
 
                 if kruskal_result.pvalue <= 0.05:
                     results.append({
-                        'cluster_id': dataHelper.rename_cluster(cluster_id),
+                        'cluster_id': dataHelper.rename_cluster(cluster_id, cluster_names),
                         'refactoring_type': refactoring_type,
                         'early_median': round(early_median, 5) * 1000,
                         'middle_median': round(middle_median, 5) * 1000,

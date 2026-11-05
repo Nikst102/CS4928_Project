@@ -1,0 +1,30 @@
+Full-pipeline regression check (M4): authors' cluster_and_analyze() run via m2_run_rq1.py with the M4 naming code
+(cluster_naming.py, reference_patterns.json, changed dataHelper.py and dtwWrapper.py), seed 9, all 1,604 releases.
+Compared with the committed M2 outputs in results/m2/outputs/.
+
+cluster_names.json written by the run:
+{
+  "0": "Early Active",
+  "1": "Steady Active",
+  "2": "Late Active",
+  "3": "Steady Inactive"
+}
+identical: data/softdtw/cluster_labels.json
+identical: data/softdtw/cluster_center.json
+identical: data/softdtw/feature_distributions.json
+identical: data/softdtw/label_timeseries.json
+identical: data/softdtw/operations-patterns.csv
+identical (SHA-256): data/softdtw/label_operations.json
+identical: images/release-patterns.png
+identical: images/radar_plots.png
+identical: printed analysis output (silhouette, chi-square, Table 1) vs results/m2/rq1_run.log
+
+Run log:
+started (UTC): 2026-11-05T17:17:05+00:00
+python: 3.10.20 | platform: Linux-6.18.44-fc-v236-x86_64-with-glibc2.39
+numpy 1.26.4 | scipy 1.12.0 | tslearn 0.6.3 | scikit-learn 1.4.0 | pandas 2.3.3 | matplotlib 3.8.2 | seaborn 0.13.2
+releases clustered: 1604
+--- authors' cluster_and_analyze() output follows; the first number is the silhouette score ---
+0.3019010480189238
+elapsed seconds: 1021.6
+exit=0

@@ -1,0 +1,12 @@
+test_all_1604_m2_releases_keep_their_name (test_cluster_naming.BehaviourPreserved) ... ok
+test_m2_centroids_get_the_authors_names (test_cluster_naming.BehaviourPreserved) ... ok
+test_rename_cluster_without_names_behaves_as_before (test_cluster_naming.BehaviourPreserved) ... ok
+test_event_a_refit_swap_is_named_correctly (test_cluster_naming.ProblemFixed) ... ok
+test_every_renumbering_of_m2_clusters_is_named_correctly (test_cluster_naming.ProblemFixed) ... ok
+test_names_are_one_to_one (test_cluster_naming.ProblemFixed) ... ok
+test_wrong_centroid_shape_is_rejected (test_cluster_naming.ProblemFixed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK

@@ -1,17 +1,24 @@
 from datetime import datetime
 import numpy as np
 
-def rename_cluster(cluster_id):
-    if cluster_id in ['0', 0]:
-        return 'Early Active'
-    elif cluster_id in ['2', 2]:
-        return 'Late Active'
-    elif cluster_id in ['1', 1]:
-        return 'Steady Active'
-    elif cluster_id in ['3', 3]:
-        return 'Steady Inactive'
-    else:
-        raise ValueError
+# The authors' original mapping from cluster number to pattern name. It is only correct
+# for the clustering the authors published (seed 9 on all 1,604 releases), which is also
+# the numbering of their shipped labels in data/feature_categories.json. See M4_DESIGN.md.
+AUTHORS_CLUSTER_NAMES = {0: 'Early Active', 1: 'Steady Active', 2: 'Late Active', 3: 'Steady Inactive'}
+
+
+def rename_cluster(cluster_id, names=None):
+    """Return the pattern name of a cluster number.
+
+    names: {cluster_number: name} for the clustering being analysed, as produced by
+    cluster_naming.name_clusters(). Without it, the authors' fixed mapping is used,
+    which is only valid for their seed-9 clustering.
+    """
+    names = AUTHORS_CLUSTER_NAMES if names is None else names
+    try:
+        return names[int(cluster_id)]
+    except (KeyError, ValueError, TypeError):
+        raise ValueError(f"unknown cluster id: {cluster_id!r}")
 
 def minmax_normalize(data):
     min_val = min(data)
