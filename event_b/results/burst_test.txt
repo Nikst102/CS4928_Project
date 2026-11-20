@@ -1,0 +1,27 @@
+Frozen rule reproduces M2 labels: 1.0000 of 1604 releases
+M2 fit to own pattern (soft-DTW, lower = better): median -13.590, 95th percentile -12.766
+
+Controlled bursts: 484 Steady Inactive releases, window = 10% of days, density 0.6
+position | still Steady Inactive | Early Active | Late Active | Steady Active | burst lost in sampling | fit worse than M2 95th pct
+   start |                 31.0% |        68.4% |        0.6% |          0.0% |                  11.0% |                      0.8%
+  middle |                 45.9% |        36.0% |       17.6% |          0.6% |                  32.9% |                      0.6%
+     end |                 40.5% |         1.0% |       58.5% |          0.0% |                  15.5% |                      0.6%
+
+Real cases (first >= 2 releases Steady Inactive, then an active release): 16
+repo | release | label | days | share of density in top 20% of days | burst position (0 start, 1 end) | poor fit | next release back to SI
+DTStack/Taier | 3/4 | Early Active | 43 | 0.65 | 0.46 | False | False
+jacoco/jacoco | 3/3 | Early Active | 113 | 0.62 | 0.57 | False | False
+jhipster/jhipster-lite | 13/28 | Late Active | 14 | 0.62 | 0.82 | False | False
+apache/eventmesh | 4/8 | Early Active | 37 | 0.61 | 0.56 | True | False
+BanManagement/BanManager | 4/9 | Late Active | 11 | 0.57 | 0.95 | False | True
+Javacord/Javacord | 3/7 | Early Active | 77 | 0.56 | 0.5 | False | False
+rememberber/WePush | 3/19 | Late Active | 7 | 0.53 | 0.83 | False | False
+resilience4j/resilience4j | 7/19 | Early Active | 21 | 0.51 | 0.36 | False | True
+Jzvd/JZVideo | 3/6 | Early Active | 11 | 0.51 | 0.75 | False | True
+googleapis/java-logging | 5/12 | Early Active | 7 | 0.47 | 0.33 | False | True
+linlinjava/litemall | 3/6 | Early Active | 16 | 0.45 | 0.47 | False | False
+qwdigital/LinkWechat | 5/11 | Early Active | 4 | 0.45 | 0.33 | False | False
+googleapis/sdk-platform-java | 3/22 | Steady Active | 17 | 0.41 | 0.75 | False | False
+pushtorefresh/storio | 3/13 | Early Active | 4 | 0.39 | 0.33 | False | True
+jmstoolbox/jmstoolbox | 3/10 | Steady Active | 5 | 0.38 | 1.0 | True | False
+scalar-labs/scalardb | 3/13 | Early Active | 4 | 0.35 | 1.0 | False | False

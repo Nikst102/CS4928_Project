@@ -1,0 +1,564 @@
+{
+  "threshold": 0.5,
+  "top_share_of_days": 0.2,
+  "baseline_flag_rate": {
+    "by_pattern": {
+      "Early Active": 0.48739495798319327,
+      "Late Active": 0.4420485175202156,
+      "Steady Active": 0.07692307692307693,
+      "Steady Inactive": 0.8264462809917356
+    },
+    "all": 0.5093516209476309
+  },
+  "controlled": {
+    "start": {
+      "before_label_only": 0.6900826446280992,
+      "after_label_or_indicator": 0.9855371900826446,
+      "indicator_alone": 0.78099173553719,
+      "newly_flagged_hidden_by_label": 16,
+      "n": 484
+    },
+    "middle": {
+      "before_label_only": 0.5413223140495868,
+      "after_label_or_indicator": 0.9628099173553719,
+      "indicator_alone": 0.7830578512396694,
+      "newly_flagged_hidden_by_label": 16,
+      "n": 484
+    },
+    "end": {
+      "before_label_only": 0.5950413223140496,
+      "after_label_or_indicator": 0.981404958677686,
+      "indicator_alone": 0.8078512396694215,
+      "newly_flagged_hidden_by_label": 22,
+      "n": 484
+    }
+  },
+  "real_cases": [
+    {
+      "repo": "jacoco/jacoco",
+      "release": "1395192808-1515019515",
+      "release_index": 3,
+      "releases": 3,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active"
+      ],
+      "label": "Early Active",
+      "days": 113,
+      "share_in_top20pct_days": 0.62,
+      "burst_position": 0.57,
+      "fit": -13.655,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.62,
+      "concentrated": true,
+      "window": [
+        0.11,
+        0.96
+      ]
+    },
+    {
+      "repo": "BanManagement/BanManager",
+      "release": "1589096912-1612651895",
+      "release_index": 4,
+      "releases": 9,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Late Active",
+        "Steady Inactive",
+        "Late Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive"
+      ],
+      "label": "Late Active",
+      "days": 11,
+      "share_in_top20pct_days": 0.57,
+      "burst_position": 0.95,
+      "fit": -13.327,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": true,
+      "concentration": 0.57,
+      "concentrated": true,
+      "window": [
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "repo": "pushtorefresh/storio",
+      "release": "1438962535-1441143538",
+      "release_index": 3,
+      "releases": 13,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Late Active",
+        "Early Active",
+        "Steady Inactive",
+        "Late Active",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Steady Active"
+      ],
+      "label": "Early Active",
+      "days": 4,
+      "share_in_top20pct_days": 0.39,
+      "burst_position": 0.33,
+      "fit": -14.098,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": true,
+      "concentration": 0.39,
+      "concentrated": false,
+      "window": [
+        0.33,
+        0.33
+      ]
+    },
+    {
+      "repo": "resilience4j/resilience4j",
+      "release": "1554456715-1558164679",
+      "release_index": 7,
+      "releases": 19,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Steady Inactive",
+        "Late Active",
+        "Early Active",
+        "Steady Inactive",
+        "Early Active"
+      ],
+      "label": "Early Active",
+      "days": 21,
+      "share_in_top20pct_days": 0.51,
+      "burst_position": 0.36,
+      "fit": -13.91,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": true,
+      "concentration": 0.51,
+      "concentrated": true,
+      "window": [
+        0.0,
+        0.9
+      ]
+    },
+    {
+      "repo": "Javacord/Javacord",
+      "release": "1617739848-1643214388",
+      "release_index": 3,
+      "releases": 7,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Late Active"
+      ],
+      "label": "Early Active",
+      "days": 77,
+      "share_in_top20pct_days": 0.56,
+      "burst_position": 0.5,
+      "fit": -13.62,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.56,
+      "concentrated": true,
+      "window": [
+        0.08,
+        0.88
+      ]
+    },
+    {
+      "repo": "rememberber/WePush",
+      "release": "1521450487-1525832072",
+      "release_index": 3,
+      "releases": 19,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Late Active",
+        "Steady Active",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Active",
+        "Early Active",
+        "Late Active",
+        "Early Active",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive"
+      ],
+      "label": "Late Active",
+      "days": 7,
+      "share_in_top20pct_days": 0.53,
+      "burst_position": 0.83,
+      "fit": -13.451,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.53,
+      "concentrated": true,
+      "window": [
+        0.83,
+        0.83
+      ]
+    },
+    {
+      "repo": "jmstoolbox/jmstoolbox",
+      "release": "1532101026-1536755436",
+      "release_index": 3,
+      "releases": 10,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Active",
+        "Steady Active",
+        "Early Active",
+        "Steady Active",
+        "Steady Active",
+        "Late Active",
+        "Early Active",
+        "Late Active"
+      ],
+      "label": "Steady Active",
+      "days": 5,
+      "share_in_top20pct_days": 0.38,
+      "burst_position": 1.0,
+      "fit": -12.616,
+      "fit_worse_than_m2_p95": true,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.38,
+      "concentrated": false,
+      "window": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "repo": "linlinjava/litemall",
+      "release": "1554997652-1558002362",
+      "release_index": 3,
+      "releases": 6,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Late Active",
+        "Steady Inactive",
+        "Early Active"
+      ],
+      "label": "Early Active",
+      "days": 16,
+      "share_in_top20pct_days": 0.45,
+      "burst_position": 0.47,
+      "fit": -13.482,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.45,
+      "concentrated": false,
+      "window": [
+        0.07,
+        0.8
+      ]
+    },
+    {
+      "repo": "scalar-labs/scalardb",
+      "release": "1606196299-1608182854",
+      "release_index": 3,
+      "releases": 13,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Active",
+        "Early Active",
+        "Steady Inactive",
+        "Late Active",
+        "Early Active",
+        "Steady Active",
+        "Early Active",
+        "Early Active",
+        "Steady Active",
+        "Steady Inactive"
+      ],
+      "label": "Early Active",
+      "days": 4,
+      "share_in_top20pct_days": 0.35,
+      "burst_position": 1.0,
+      "fit": -14.04,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.35,
+      "concentrated": false,
+      "window": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "repo": "googleapis/java-logging",
+      "release": "1629847751-1632776917",
+      "release_index": 5,
+      "releases": 12,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive"
+      ],
+      "label": "Early Active",
+      "days": 7,
+      "share_in_top20pct_days": 0.47,
+      "burst_position": 0.33,
+      "fit": -13.826,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": true,
+      "concentration": 0.47,
+      "concentrated": false,
+      "window": [
+        0.33,
+        0.33
+      ]
+    },
+    {
+      "repo": "apache/eventmesh",
+      "release": "1647359379-1656924637",
+      "release_index": 4,
+      "releases": 8,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active"
+      ],
+      "label": "Early Active",
+      "days": 37,
+      "share_in_top20pct_days": 0.61,
+      "burst_position": 0.56,
+      "fit": -12.73,
+      "fit_worse_than_m2_p95": true,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.61,
+      "concentrated": true,
+      "window": [
+        0.22,
+        0.94
+      ]
+    },
+    {
+      "repo": "Jzvd/JZVideo",
+      "release": "1587838910-1590330021",
+      "release_index": 3,
+      "releases": 6,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive"
+      ],
+      "label": "Early Active",
+      "days": 11,
+      "share_in_top20pct_days": 0.51,
+      "burst_position": 0.75,
+      "fit": -13.53,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": true,
+      "concentration": 0.51,
+      "concentrated": true,
+      "window": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "repo": "googleapis/sdk-platform-java",
+      "release": "1629231165-1634688974",
+      "release_index": 3,
+      "releases": 22,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Active",
+        "Steady Active",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive"
+      ],
+      "label": "Steady Active",
+      "days": 17,
+      "share_in_top20pct_days": 0.41,
+      "burst_position": 0.75,
+      "fit": -12.955,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.41,
+      "concentrated": false,
+      "window": [
+        0.44,
+        1.0
+      ]
+    },
+    {
+      "repo": "DTStack/Taier",
+      "release": "1658753561-1667398688",
+      "release_index": 3,
+      "releases": 4,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Late Active"
+      ],
+      "label": "Early Active",
+      "days": 43,
+      "share_in_top20pct_days": 0.65,
+      "burst_position": 0.46,
+      "fit": -13.543,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.65,
+      "concentrated": true,
+      "window": [
+        0.0,
+        0.9
+      ]
+    },
+    {
+      "repo": "jhipster/jhipster-lite",
+      "release": "1663183860-1664781672",
+      "release_index": 13,
+      "releases": 28,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Late Active",
+        "Early Active",
+        "Late Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Steady Active",
+        "Late Active"
+      ],
+      "label": "Late Active",
+      "days": 14,
+      "share_in_top20pct_days": 0.62,
+      "burst_position": 0.82,
+      "fit": -13.674,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.62,
+      "concentrated": true,
+      "window": [
+        0.62,
+        1.0
+      ]
+    },
+    {
+      "repo": "qwdigital/LinkWechat",
+      "release": "1677234488-1677769005",
+      "release_index": 5,
+      "releases": 11,
+      "history": [
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Steady Inactive",
+        "Early Active",
+        "Late Active",
+        "Late Active",
+        "Early Active",
+        "Early Active",
+        "Early Active",
+        "Early Active"
+      ],
+      "label": "Early Active",
+      "days": 4,
+      "share_in_top20pct_days": 0.45,
+      "burst_position": 0.33,
+      "fit": -13.819,
+      "fit_worse_than_m2_p95": false,
+      "next_release_back_to_steady_inactive": false,
+      "concentration": 0.45,
+      "concentrated": false,
+      "window": [
+        0.33,
+        0.33
+      ]
+    }
+  ]
+}

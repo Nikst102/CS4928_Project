@@ -1,0 +1,28 @@
+====================================================================================================
+Response: burst indicator (concentrated if >= 50% of density in busiest 20% of days), reported next to the unchanged label
+
+Unmodified M2 releases flagged as concentrated (baseline):
+   Early Active     48.7%
+   Late Active      44.2%
+   Steady Active    7.7%
+   Steady Inactive  82.6%
+   all 1,604        50.9%
+
+Controlled bursts on Steady Inactive releases: share where the burst is visible
+position | before (label changes from Steady Inactive) | after (label changes OR indicator fires) | indicator alone
+   start |                                       69.0% |                                    98.6% |           78.1%
+  middle |                                       54.1% |                                    96.3% |           78.3%
+     end |                                       59.5% |                                    98.1% |           80.8%
+
+Real cases (Steady Inactive history, then one active release):
+   flagged as concentrated: 9 of 16
+   of those, next release back to Steady Inactive (isolated burst): 3
+   DTStack/Taier release 3/4: label Early Active, concentration 0.65, window [0.0, 0.9], next release back to SI: False
+   jacoco/jacoco release 3/3: label Early Active, concentration 0.62, window [0.11, 0.96], next release back to SI: False
+   jhipster/jhipster-lite release 13/28: label Late Active, concentration 0.62, window [0.62, 1.0], next release back to SI: False
+   apache/eventmesh release 4/8: label Early Active, concentration 0.61, window [0.22, 0.94], next release back to SI: False
+   BanManagement/BanManager release 4/9: label Late Active, concentration 0.57, window [0.9, 1.0], next release back to SI: True
+   Javacord/Javacord release 3/7: label Early Active, concentration 0.56, window [0.08, 0.88], next release back to SI: False
+   rememberber/WePush release 3/19: label Late Active, concentration 0.53, window [0.83, 0.83], next release back to SI: False
+   resilience4j/resilience4j release 7/19: label Early Active, concentration 0.51, window [0.0, 0.9], next release back to SI: True
+   Jzvd/JZVideo release 3/6: label Early Active, concentration 0.51, window [0.5, 1.0], next release back to SI: True
